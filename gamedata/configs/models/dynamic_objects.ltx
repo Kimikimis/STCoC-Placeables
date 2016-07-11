@@ -656,42 +656,42 @@ custom_data 		    = models\objects\ignore_static.ltx
 fixed_bones = bone01_(1),bone01_(2),bone01_(3),bone02_(1),bone02_(2),bone02_(3),bone03
 
 ;*******************************************************************************
-; Nox placeables
+; Placeables
 ;********************************************************************************
 
 [ph_placeable]:physic_object
-visual                        = dynamics\box\konteyner_01.ogf
-script_binding			= bind_physic_object.init
-custom_data 			= scripts\ph_placeable.ltx
+visual                        		= dynamics\box\konteyner_01.ogf
+script_binding				= bind_physic_object.init
+custom_data 				= scripts\ph_placeable.ltx
 
 [ph_placeable_gaslamp]:ph_placeable
-visual                        = prop\objects\light\new_light\light_gas_1.ogf
-custom_data		= scripts\ph_placeable_gaslamp.ltx
+visual                        		= prop\objects\light\new_light\light_gas_1.ogf
+custom_data				= scripts\ph_placeable_gaslamp.ltx
 
 [ph_placeable_ledlamp]:ph_placeable
-visual                        = dynamics\light\light_altar.ogf
-custom_data		= scripts\ph_placeable_ledlamp.ltx
+visual                        		= dynamics\light\light_altar.ogf
+custom_data				= scripts\ph_placeable_ledlamp.ltx
 
 [ph_placeable_smallstove]:ph_placeable
-visual                        = dynamics\kitchen_room\gaz_plita_small.ogf
-custom_data		= scripts\ph_placeable_smallstove.ltx
-effective_radius			= 1.3 ;размер радиуса в процентах от оригинального, где действует зона
+visual                        		= dynamics\kitchen_room\gaz_plita_small.ogf
+custom_data				= scripts\ph_placeable_smallstove.ltx
+effective_radius				= 1.3 ;размер радиуса в процентах от оригинального, где действует зона
 
-sound						= 
-postprocess					= postprocess_flame
+sound					= 
+postprocess				= postprocess_flame
 
-min_start_power		= 0.39
-max_start_power		= 0.40
+min_start_power			= 0.39
+max_start_power			= 0.40
 
 idle_particles				= explosions\campfire_05
 blowout_particles			= explosions\campfire_blowout
 
 hit_small_particles			= damage_fx\burn_creatures00
 hit_big_particles			= damage_fx\burn_creatures00
-idle_small_particles		= damage_fx\burn_creatures00
+idle_small_particles			= damage_fx\burn_creatures00
 idle_big_particles			= damage_fx\burn_creatures00
 
-idle_particles_dont_stop	= true;
+idle_particles_dont_stop		= true;
 
 idle_sound					= ambient\fire2		;постоянный звук
 blowout_sound				= ambient\fire2		;во время выброса(удара) в центре аномалии	
@@ -706,14 +706,14 @@ disable_idle_time			= 50000	;время отключения idle партиклов
 
 ignore_nonalive				= false
 
-light_color		    		= 1.8,1.7,1.4
-light_animation             = koster
+light_color		    			= 1.8,1.7,1.4
+light_animation             		= koster
 light_range		    		= 8
 light_time 		    		= 0.35
 light_height				= 0.75			;подъем источника света на высоту
 
 idle_light					= on
-idle_light_range			= 8.0
+idle_light_range				= 8.0
 idle_light_range_delta 		= 0.25
 idle_light_anim				= koster_00
 idle_light_height			= 0.70			;подъем источника света на высоту
