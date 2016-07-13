@@ -6,6 +6,8 @@ It's pretty straightforward. Use the item from your inventory and its prop is pl
 Currently the props spawn directly on the player's position, which will cause some problems. 
 
 TODO - Basics: 
+ * Make props static (disable their physics/ignore collisions with everything but world)
+ * Find appropriate model paths for items with faulty ones / Create loose model files for items without ones. 
  * Add dynamic lights to appropriate props
  * Add fire effects to appropriate props
  * Add sound effects to appropriate props
