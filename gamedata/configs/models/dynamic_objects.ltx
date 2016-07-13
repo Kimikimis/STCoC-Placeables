@@ -664,94 +664,99 @@ visual                        		= dynamics\box\konteyner_01.ogf
 script_binding				= bind_physic_object.init
 custom_data 				= scripts\ph_placeable.ltx
 
-[ph_placeable_gaslamp]:ph_placeable
-visual                        		= prop\objects\light\new_light\light_gas_1.ogf
-custom_data				= scripts\ph_placeable_gaslamp.ltx
+;[ph_placeable_plankfloor]:ph_placeable
+;visual					= dynamics\wood_doski\wood_doska1.ogf
 
-[ph_placeable_ledlamp]:ph_placeable
-visual                        		= dynamics\light\light_altar.ogf
-custom_data				= scripts\ph_placeable_ledlamp.ltx
+;[ph_placeable_gaslamp]:ph_placeable
+;visual                        		= prop\objects\light\new_light\light_gas_1.ogf
+;custom_data				= scripts\ph_placeable_gaslamp.ltx
 
-[ph_placeable_smallstove]:ph_placeable
-visual                        		= dynamics\kitchen_room\gaz_plita_small.ogf
-custom_data				= scripts\ph_placeable_smallstove.ltx
-effective_radius				= 1.3 ;размер радиуса в процентах от оригинального, где действует зона
+;[ph_placeable_ledlamp]:ph_placeable
+;visual                        		= dynamics\light\light_altar.ogf
+;custom_data				= scripts\ph_placeable_ledlamp.ltx
 
-sound					= 
-postprocess				= postprocess_flame
+;[ph_placeable_smallstove]:ph_placeable
+;visual                        		= dynamics\kitchen_room\gaz_plita_small.ogf
+;custom_data				= scripts\ph_placeable_smallstove.ltx
 
-min_start_power			= 0.39
-max_start_power			= 0.40
+; Hoping that the below will make the fire/glow of the stove
+;effective_radius				= 1.3 ;размер радиуса в процентах от оригинального, где действует зона
 
-idle_particles				= explosions\campfire_05
-blowout_particles			= explosions\campfire_blowout
+;sound					= 
+;postprocess				= postprocess_flame
 
-hit_small_particles			= damage_fx\burn_creatures00
-hit_big_particles			= damage_fx\burn_creatures00
-idle_small_particles			= damage_fx\burn_creatures00
-idle_big_particles			= damage_fx\burn_creatures00
+;min_start_power			= 0.39
+;max_start_power			= 0.40
 
-idle_particles_dont_stop		= true;
+;idle_particles				= explosions\campfire_05
+;blowout_particles			= explosions\campfire_blowout
 
-idle_sound					= ambient\fire2		;постоянный звук
-blowout_sound				= ambient\fire2		;во время выброса(удара) в центре аномалии	
-hit_sound					= ambient\fire2		;на персонаже, когда тот получает хит
-entrance_sound				= ambient\fire2		;при попадании объекта в аномалию
+;hit_small_particles			= damage_fx\burn_creatures00
+;hit_big_particles			= damage_fx\burn_creatures00
+;idle_small_particles			= damage_fx\burn_creatures00
+;idle_big_particles			= damage_fx\burn_creatures00
 
-hit_type					= burn
+;idle_particles_dont_stop		= true;
 
-disable_time				= 10000	;время игнорирования неживого объекта в зоне (-1 если не нужно)
-disable_time_small			= -1	;время игнорирования маленького неживого объекта в зоне (-1 если не нужно)
-disable_idle_time			= 50000	;время отключения idle партиклов
+;idle_sound					= ambient\fire2		;постоянный звук
+;blowout_sound				= ambient\fire2		;во время выброса(удара) в центре аномалии	
+;hit_sound					= ambient\fire2		;на персонаже, когда тот получает хит
+;entrance_sound				= ambient\fire2		;при попадании объекта в аномалию
 
-ignore_nonalive				= false
+;hit_type					= burn
 
-light_color		    			= 1.8,1.7,1.4
-light_animation             		= koster
-light_range		    		= 8
-light_time 		    		= 0.35
-light_height				= 0.75			;подъем источника света на высоту
+;disable_time				= 10000	;время игнорирования неживого объекта в зоне (-1 если не нужно)
+;disable_time_small			= -1	;время игнорирования маленького неживого объекта в зоне (-1 если не нужно)
+;disable_idle_time			= 50000	;время отключения idle партиклов
 
-idle_light					= on
-idle_light_range				= 8.0
-idle_light_range_delta 		= 0.25
-idle_light_anim				= koster_00
-idle_light_height			= 0.70			;подъем источника света на высоту
+;ignore_nonalive				= false
 
-[ph_placeable_gasheater]:ph_placeable
-visual                        = external\cs_cop\fireplace\fireplace_small_stove.ogf
-custom_data		= scripts\ph_placeable_gasheater.ltx
+;light_color		    			= 1.8,1.7,1.4
+;light_animation             		= koster
+;light_range		    		= 8
+;light_time 		    		= 0.35
+;light_height				= 0.75			;подъем источника света на высоту
 
-[ph_placeable_radio]:ph_placeable
-visual                        = dynamics\el_tehnika\priemnik_gorizont.ogf
-custom_data		= scripts\ph_placeable_radio.ltx
+;idle_light					= on
+;idle_light_range				= 8.0
+;idle_light_range_delta 		= 0.25
+;idle_light_anim				= koster_00
+;idle_light_height			= 0.70			;подъем источника света на высоту
 
-[ph_placeable_tent]:ph_placeable
-visual			= external\cs_cop\army_base\prop_army_base_tent.ogf
+;[ph_placeable_gasheater]:ph_placeable
+;visual                        = external\cs_cop\fireplace\fireplace_small_stove.ogf
+;custom_data		= scripts\ph_placeable_gasheater.ltx
 
-[ph_placeable_tent_small]:ph_placeable
-visual			= external\cs_cop\army_base\prop_army_base_tent_small.ogf
+;[ph_placeable_radio]:ph_placeable
+;visual                        = dynamics\el_tehnika\priemnik_gorizont.ogf
+;custom_data		= scripts\ph_placeable_radio.ltx
 
-[ph_placeable_tent_palatka]:ph_placeable
-visual			= external\cs_cop\army_base\prop_palatka.ogf
+;[ph_placeable_tent]:ph_placeable
+;visual			= external\cs_cop\army_base\prop_army_base_tent.ogf
 
-[ph_placeable_hookah]:ph_placeable
-visual			= external\cs_cop\relax_room\kalyan.ogf
+;[ph_placeable_tent_small]:ph_placeable
+;visual			= external\cs_cop\army_base\prop_army_base_tent_small.ogf
 
-[ph_placeable_camouflagenet_a]:ph_placeable
-visual			= external\cs_cop\army_base\prop_army_base_01.ogf
+;[ph_placeable_tent_palatka]:ph_placeable
+;visual			= external\cs_cop\army_base\prop_palatka.ogf
 
-[ph_placeable_camouflagenet_b]:ph_placeable
-visual			= external\cs_cop\army_base\prop_army_base_02.ogf
+;[ph_placeable_hookah]:ph_placeable
+;visual			= external\cs_cop\relax_room\kalyan.ogf
 
-[ph_placeable_camouflagenet_c]:ph_placeable
-visual			= external\cs_cop\army_base\prop_army_base_03.ogf
+;[ph_placeable_camouflagenet_a]:ph_placeable
+;visual			= external\cs_cop\army_base\prop_army_base_01.ogf
 
-[ph_placeable_camouflagenet_d]:ph_placeable
-visual			= external\cs_cop\army_base\prop_army_base_18.ogf
+;[ph_placeable_camouflagenet_b]:ph_placeable
+;visual			= external\cs_cop\army_base\prop_army_base_02.ogf
 
-[ph_placeable_barricade_metal]:ph_placeable
-visual			= external\cs_cop\cover\cover_metal_shield_3.ogf
+;[ph_placeable_camouflagenet_c]:ph_placeable
+;visual			= external\cs_cop\army_base\prop_army_base_03.ogf
 
-[ph_placeable_barricade_wood]:ph_placeable
-visual			= external\cs_cop\cover\cover_village_wood_6.ogf
+;[ph_placeable_camouflagenet_d]:ph_placeable
+;visual			= external\cs_cop\army_base\prop_army_base_18.ogf
+
+;[ph_placeable_barricade_metal]:ph_placeable
+;visual			= external\cs_cop\cover\cover_metal_shield_3.ogf
+
+;[ph_placeable_barricade_wood]:ph_placeable
+;visual			= external\cs_cop\cover\cover_village_wood_6.ogf

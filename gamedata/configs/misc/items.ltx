@@ -1682,89 +1682,102 @@ inv_grid_height                          = 1
 inv_grid_x                               = 19
 inv_grid_y                               = 2
 
-[itm_placeable]:booster
+[itm_placeable]:identity_immunities
 GroupControlSection                      = spawn_group
 discovery_dependency                     =
 $spawn                                   = "devices\repair_kit_10"
 $prefetch                                = 32
-class                                    = S_INVBOX
+class                                    = II_ANTIR
 cform                                    = skeleton
-visual                                   = dynamics\devices\dev_instrument_1\dev_instrument_1.ogf
+visual                                   = dynamics\devices\dev_rukzak\dev_rukzak.ogf
 description                              = st_itm_placeable_desc
 inv_name                                 = st_itm_placeable_name
 inv_name_short                           = st_itm_placeable_name
 inv_weight                               = 1
 inv_grid_width                           = 2
 inv_grid_height                          = 2
-inv_grid_x                               = 14
-inv_grid_y                               = 10
+inv_grid_x                               = 13
+inv_grid_y                               = 25
+cost                                     = 0
+eat_health                               = 0
+eat_satiety                              = 0
+eat_power                                = 0
+eat_radiation                            = 0
+eat_alcohol                              = 0
+wounds_heal_perc                         = 0
+;animation_slot                           = 4
+;hud                                      = wpn_vodka_hud
+;slot                                     = -1
 placeable_section                        = ph_placeable	                                       ;Section of placeable physics object
 
-[itm_placeable_gaslamp]:itm_placeable
-placeable_section			= ph_placeable_gaslamp
-description                              = st_itm_placeable_gaslamp_desc
-inv_name                                 = st_itm_placeable_gaslamp_name
-inv_name_short                           = st_itm_placeable_gaslamp_name
+;[itm_placeable_plankfloor]:itm_placeable
+;placeable_section			= ph_placeable_plankfloor
+;description                              = st_itm_placeable_plankfloor_desc
+;inv_name                                 = st_itm_placeable_plankfloor_name
+;inv_name_short                           = st_itm_placeable_plankfloor_name
 
-[itm_placeable_ledlamp]:itm_placeable
-placeable_section			= ph_placeable_ledlamp
-description                              = st_itm_placeable_ledlamp_desc
-inv_name                                 = st_itm_placeable_ledlamp_name
-inv_name_short                           = st_itm_placeable_ledlamp_name
+;[itm_placeable_gaslamp]:itm_placeable
+;placeable_section			= ph_placeable_gaslamp
+;description                              = st_itm_placeable_gaslamp_desc
+;inv_name                                 = st_itm_placeable_gaslamp_name
+;inv_name_short                           = st_itm_placeable_gaslamp_name
 
-[itm_placeable_smallstove]:itm_placeable
-placeable_section			= ph_placeable_smallstove
-description                              = st_itm_placeable_smallstove_desc
-description                              = st_itm_placeable_desc
-inv_name                                 = st_itm_placeable_name
-inv_name_short                           = st_itm_placeable_name
-inv_name                                 = st_itm_placeable_smallstove_name
-inv_name_short                           = st_itm_placeable_smallstove_name
+;[itm_placeable_ledlamp]:itm_placeable
+;placeable_section			= ph_placeable_ledlamp
+;description                              = st_itm_placeable_ledlamp_desc
+;inv_name                                 = st_itm_placeable_ledlamp_name
+;inv_name_short                           = st_itm_placeable_ledlamp_name
 
-[itm_placeable_gasheater]:itm_placeable
-placeable_section			= ph_placeable_gasheater
-description                              = st_itm_placeable_gasheater_desc
-inv_name                                 = st_itm_placeable_gasheater_name
-inv_name_short                           = st_itm_placeable_gasheater_name
+;[itm_placeable_smallstove]:itm_placeable
+;placeable_section			= ph_placeable_smallstove
+;description                              = st_itm_placeable_smallstove_desc
+;inv_name                                 = st_itm_placeable_smallstove_name
+;inv_name_short                           = st_itm_placeable_smallstove_name
 
-[itm_placeable_radio]:itm_placeable
-placeable_section			= ph_placeable_radio
-description                              = st_itm_placeable_radio_desc
-inv_name                                 = st_itm_placeable_radio_name
-inv_name_short                           = st_itm_placeable_radio_name
+;[itm_placeable_gasheater]:itm_placeable
+;placeable_section			= ph_placeable_gasheater
+;description                              = st_itm_placeable_gasheater_desc
+;inv_name                                 = st_itm_placeable_gasheater_name
+;inv_name_short                           = st_itm_placeable_gasheater_name
 
-[itm_placeable_tent]:itm_placeable
-placeable_section			= ph_placeable_tent
-description                              = st_itm_placeable_tent_desc
-inv_name                                 = st_itm_placeable_tent_name
-inv_name_short                           = st_itm_placeable_tent_name
+;[itm_placeable_radio]:itm_placeable
+;placeable_section			= ph_placeable_radio
+;description                              = st_itm_placeable_radio_desc
+;inv_name                                 = st_itm_placeable_radio_name
+;inv_name_short                           = st_itm_placeable_radio_name
 
-[itm_placeable_tent_small]:itm_placeable
-placeable_section			= ph_placeable_tent_small
-description                              = st_itm_placeable_tent_small_desc
-inv_name                                 = st_itm_placeable_tent_small_name
-inv_name_short                           = st_itm_placeable_tent_small_name
+;[itm_placeable_tent]:itm_placeable
+;placeable_section			= ph_placeable_tent
+;description                              = st_itm_placeable_tent_desc
+;inv_name                                 = st_itm_placeable_tent_name
+;inv_name_short                           = st_itm_placeable_tent_name
 
-[itm_placeable_tent_palatka]:itm_placeable
-placeable_section			= ph_placeable_tent_palatka
-description                              = st_itm_placeable__tent_palatka_desc
-inv_name                                 = st_itm_placeable_tent_palatka_name
-inv_name_short                           = st_itm_placeable_tent_palatka_name
+;[itm_placeable_tent_small]:itm_placeable
+;placeable_section			= ph_placeable_tent_small
+;description                              = st_itm_placeable_tent_small_desc
+;inv_name                                 = st_itm_placeable_tent_small_name
+;inv_name_short                           = st_itm_placeable_tent_small_name
 
-[itm_placeable_hookah]:itm_placeable
-placeable_section			= ph_placeable_hookah
-description                              = st_itm_placeable_hookah_desc
-inv_name                                 = st_itm_placeable_hookah_name
-inv_name_short                           = st_itm_placeable_hookah_name
+;[itm_placeable_tent_palatka]:itm_placeable
+;placeable_section			= ph_placeable_tent_palatka
+;description                              = st_itm_placeable__tent_palatka_desc
+;inv_name                                 = st_itm_placeable_tent_palatka_name
+;inv_name_short                           = st_itm_placeable_tent_palatka_name
 
-[itm_placeable_camouflagenet_a]:itm_placeable
-placeable_section			= ph_placeable_camouflagenet_a
-description                              = st_itm_placeable_camouflagenet_a_desc
-inv_name                                 = st_itm_placeable_camouflagenet_a_name
-inv_name_short                           = st_itm_placeable_camouflagenet_a_name
+;[itm_placeable_hookah]:itm_placeable
+;placeable_section			= ph_placeable_hookah
+;description                              = st_itm_placeable_hookah_desc
+;inv_name                                 = st_itm_placeable_hookah_name
+;inv_name_short                           = st_itm_placeable_hookah_name
 
-[itm_placeable_camouflagenet_b]:itm_placeable
-placeable_section			= ph_placeable_camouflagenet_b
-description                              = st_itm_placeable_camouflagenet_b_desc
-inv_name                                 = st_itm_placeable_camouflagenet_b_name
-inv_name_short                           = st_itm_placeable_camouflagenet_b_name
+;[itm_placeable_camouflagenet_a]:itm_placeable
+;placeable_section			= ph_placeable_camouflagenet_a
+;description                              = st_itm_placeable_camouflagenet_a_desc
+;inv_name                                 = st_itm_placeable_camouflagenet_a_name
+;inv_name_short                           = st_itm_placeable_camouflagenet_a_name
+
+;[itm_placeable_camouflagenet_b]:itm_placeable
+;placeable_section			= ph_placeable_camouflagenet_b
+;description                              = st_itm_placeable_camouflagenet_b_desc
+;inv_name                                 = st_itm_placeable_camouflagenet_b_name
+;inv_name_short                           = st_itm_placeable_camouflagenet_b_name

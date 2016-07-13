@@ -2,8 +2,8 @@
 <string_table>
 	<string id="st_itm_placeable_name">
 		<text>Placeable Object</text>
-			</string>
+	</string>
 	<string id="st_itm_placeable_desc">
 		<text>An object that can be picked up and placed somewhere else. Use it to pick it up, drop it to place it. </text>
-			</string>
+	</string>
 </string_table>
